@@ -39,18 +39,47 @@
                                     <action selector="coolButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E6u-Xt-J1C"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W1u-0j-fGD">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="46H-GB-DyD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7A8-BB-edY">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="FD4-rD-bwy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLd-r1-kNr">
+                                <state key="normal" title="Math"/>
+                                <connections>
+                                    <action selector="theMath:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fVR-pP-Ena"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="xLd-r1-kNr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="89T-kh-FFz"/>
+                            <constraint firstItem="7A8-BB-edY" firstAttribute="top" secondItem="W1u-0j-fGD" secondAttribute="bottom" constant="10" id="9SY-eP-svQ"/>
                             <constraint firstItem="PJj-55-eCn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DcW-Nc-mid"/>
-                            <constraint firstItem="PJj-55-eCn" firstAttribute="top" secondItem="GD7-cL-Hdf" secondAttribute="bottom" constant="100" id="Wtg-lE-w7c"/>
-                            <constraint firstItem="n9K-tu-Pjz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="bCe-Ou-pu3"/>
+                            <constraint firstItem="W1u-0j-fGD" firstAttribute="top" secondItem="PJj-55-eCn" secondAttribute="bottom" constant="20" id="ISZ-99-iLp"/>
+                            <constraint firstItem="PJj-55-eCn" firstAttribute="top" secondItem="GD7-cL-Hdf" secondAttribute="bottom" constant="15" id="Wtg-lE-w7c"/>
+                            <constraint firstItem="n9K-tu-Pjz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="bCe-Ou-pu3"/>
+                            <constraint firstItem="xLd-r1-kNr" firstAttribute="top" secondItem="7A8-BB-edY" secondAttribute="bottom" constant="20" id="c75-Li-4g7"/>
+                            <constraint firstItem="W1u-0j-fGD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dWk-PS-odd"/>
                             <constraint firstItem="GD7-cL-Hdf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nq0-zF-zJZ"/>
-                            <constraint firstItem="GD7-cL-Hdf" firstAttribute="top" secondItem="n9K-tu-Pjz" secondAttribute="bottom" constant="121" id="owv-HB-ruv"/>
+                            <constraint firstItem="GD7-cL-Hdf" firstAttribute="top" secondItem="n9K-tu-Pjz" secondAttribute="bottom" constant="15" id="owv-HB-ruv"/>
+                            <constraint firstItem="7A8-BB-edY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qF1-hU-DN9"/>
                             <constraint firstItem="n9K-tu-Pjz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vQO-3o-yxe"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="textOne" destination="W1u-0j-fGD" id="PbD-fs-uYH"/>
+                        <outlet property="textTwo" destination="7A8-BB-edY" id="Frd-UZ-1Rd"/>
+                        <outlet property="theMath" destination="xLd-r1-kNr" id="Bd2-yU-6Ae"/>
                         <outlet property="thelabel" destination="n9K-tu-Pjz" id="imv-3z-dUu"/>
                     </connections>
                 </viewController>
